@@ -1,0 +1,1 @@
+Tämä kansio sisältää kuvat, joita käytetään Websivuston Kehittäminen -kurssin harjoituksissa ja tehtävissä.
