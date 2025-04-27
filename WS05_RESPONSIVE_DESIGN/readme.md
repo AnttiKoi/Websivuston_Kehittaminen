@@ -1,0 +1,1 @@
+Tänne tallennan kaikki WS05_RESPONSIVE_DESIGN tehtävät.
