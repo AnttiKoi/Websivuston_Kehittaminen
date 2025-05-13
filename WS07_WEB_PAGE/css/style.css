@@ -1,0 +1,168 @@
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #990000;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+h1,
+h2 {
+  color: #ff0000;
+}
+
+.btn-custom {
+  background-color: #ff0000;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #cc0000;
+}
+
+.hero {
+  background-image: url("../../Kuvat/Hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  max-height: 350px;
+  margin-bottom: 2rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.album-card {
+  background-color: #222;
+  border: 1px solid #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.timeline {
+  border-left: 3px solid #ff0000;
+  padding-left: 1rem;
+}
+
+.timeline-item {
+  margin-bottom: 1.5rem;
+}
+
+.live-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.list-group-item {
+  border-color: #333;
+}
+
+.map-container {
+  position: relative;
+  background-image: url("../../Kuvat/maailmankartta.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border: 2px solid #444;
+}
+
+.flag-icon {
+  position: absolute;
+  width: 32px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-title {
+  animation: slideDown 1s ease-out;
+  text-align: center;
+  color: #ff0000;
+  margin-top: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.tooltip-inner {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.nav-link.active {
+  color: #ff0000 !important;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+.flag-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #ff0000;
+  z-index: 999;
+}
+
+.hero-img-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.album-card h5,
+.album-card p {
+  color: #ff0000;
+}

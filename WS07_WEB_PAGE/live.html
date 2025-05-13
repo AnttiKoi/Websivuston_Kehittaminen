@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rammstein - Live</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../WS07_WEB_PAGE/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../Kuvat/favicon.ico" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand text-white d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <img src="../Kuvat/Logo.png" alt="Logo" style="height: 30px" />
+          Rammstein
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="albumit.html">Albumit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="live.html">Live</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-4">
+      <h1 class="text-center mb-4">Rammstein Livenä</h1>
+      <p class="text-center mb-5">
+        Rammstein tunnetaan massiivisista live-esiintymisistään, joissa
+        yhdistyvät musiikki, pyrotekniikka ja visuaaliset tehosteet. Heidän
+        konserttinsa ovat todellisia spektaakkeleita, jotka jäävät katsojan
+        mieleen pitkäksi aikaa.
+      </p>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <img src="../Kuvat/R+1.jpg" alt="Rammstein Live 1" class="live-img" />
+        </div>
+        <div class="col-md-4">
+          <img src="../Kuvat/R+2.jpg" alt="Rammstein Live 2" class="live-img" />
+        </div>
+        <div class="col-md-4">
+          <img src="../Kuvat/R+3.jpg" alt="Rammstein Live 3" class="live-img" />
+        </div>
+      </div>
+
+      <h2 class="mb-3">Katso live-esiintymisiä</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/U13baBe-btg"
+              title="Rammstein - Sonne (Live)"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/q-eBvKCtdmQ"
+              title="Rammstein - Deutschland (Live)"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mt-5 mb-3">Rammsteinin kiertueita ympäri maailmaa</h2>
+    <div class="map-container">
+      <img
+        src="../Kuvat/flag-france.png"
+        class="flag-icon"
+        style="top: 33%; left: 45%"
+        data-bs-toggle="tooltip"
+        title="Pariisi - Live from Paris (2012)"
+      />
+      <img
+        src="../Kuvat/flag-mexico.png"
+        class="flag-icon"
+        style="top: 50%; left: 15%"
+        data-bs-toggle="tooltip"
+        title="Mexico City - Stadium Tour (2022)"
+      />
+      <img
+        src="../Kuvat/flag-usa.png"
+        class="flag-icon"
+        style="top: 40%; left: 20%"
+        data-bs-toggle="tooltip"
+        title="New York - Madison Square Garden (2010)"
+      />
+      <img
+        src="../Kuvat/flag-finland.png"
+        class="flag-icon"
+        style="top: 23%; left: 51%"
+        data-bs-toggle="tooltip"
+        title="Helsinki - Olympiastadion (2023)"
+      />
+      <img
+        src="../Kuvat/flag-japan.png"
+        class="flag-icon"
+        style="top: 38%; left: 82%"
+        data-bs-toggle="tooltip"
+        title="Tokio - Reise Reise Tour (2005)"
+      />
+    </div>
+
+    <ul class="list-group list-group-flush bg-dark text-light mb-5">
+      <li class="list-group-item bg-dark text-light">
+        🇫🇷 Pariisi, Ranska – Live from Paris (2012)
+      </li>
+      <li class="list-group-item bg-dark text-light">
+        🇲🇽 Mexico City, Meksiko – Stadium Tour (2022)
+      </li>
+      <li class="list-group-item bg-dark text-light">
+        🇺🇸 New York, USA – Madison Square Garden (2010)
+      </li>
+      <li class="list-group-item bg-dark text-light">
+        🇫🇮 Helsinki, Suomi – Olympiastadion (2023)
+      </li>
+      <li class="list-group-item bg-dark text-light">
+        🇯🇵 Tokio, Japani – Reise Reise Tour (2005)
+      </li>
+    </ul>
+
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      tooltipTriggerList.forEach((el) => new bootstrap.Tooltip(el));
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-0">&copy; 2025 – Projektityö | AnttiKoi</p>
+      </div>
+    </footer>
+  </body>
+</html>
